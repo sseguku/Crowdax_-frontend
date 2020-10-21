@@ -6,8 +6,15 @@ import {
   FormControl,
   InputGroup,
   Row,
+  Badge,
+  ButtonGroup,
+  DropdownButton,
+  Dropdown,
+  Card,
+  CardGroup
 } from "react-bootstrap";
 import search_icon from "../../assests/search_icon.png";
+import download from "../../assests/download.svg";
 export class HomeHeader extends Component {
   render() {
     return (
@@ -65,6 +72,89 @@ export class HomeHeader extends Component {
             <h4>Live Campaigns</h4>
             <h2>15</h2>
           </Col>
+        </Row>
+        <Row>
+          <Col>
+            <DropdownButton as={ButtonGroup} title="Sort By" id="bg-vertical-dropdown-1" style={{ width: '10rem' }}>
+              <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
+              <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
+            </DropdownButton>
+          </Col>
+          <Col>
+          <Button style={{ width: '10rem' }}>All</Button>
+        </Col>
+        <Col>
+          <Button style={{ width: '10rem' }}>Trending</Button>
+        </Col>
+        <Col>
+          <Button style={{ width: '10rem' }}>Most Funded</Button>
+        </Col>
+        <Col>
+          <Button style={{ width: '10rem' }}>Sectors</Button>
+        </Col>
+        <Col>
+          <Button style={{ width: '10rem' }}>Opportunities</Button>
+        </Col>
+        </Row>
+        <h2 style = {{ paddingTop:'20px'}}>Featured Investments</h2>
+        <Row >
+          <CardGroup>
+            <Col>
+              <Card>
+                <Card.Img variant="top" src={download} />
+              </Card>
+            </Col>
+            <Col>
+              <Card>
+                <Card.Img variant="top" src={download} />
+              </Card>
+            </Col> 
+            <Col>
+              <Card>
+                <Card.Img variant="top" src={download} />
+              </Card>
+            </Col>          
+          </CardGroup>
+        </Row>
+        <h2 style = {{ paddingTop:'20px'}}>Latest Investments</h2>
+        <Row >
+          <CardGroup>
+            <Col>
+              <Card>
+                <Card.Img variant="top" src={download} />
+              </Card>
+            </Col>
+            <Col>
+              <Card>
+                <Card.Img variant="top" src={download} />
+              </Card>
+            </Col> 
+            <Col>
+              <Card>
+                <Card.Img variant="top" src={download} />
+              </Card>
+            </Col>          
+          </CardGroup>
+        </Row>
+        <h2 style = {{ paddingTop:'20px'}}>Latest Investments</h2>
+        <Row >
+          <CardGroup>
+            <Col>
+              <Card>
+                <Card.Img variant="top" src={download} />
+              </Card>
+            </Col>
+            <Col>
+              <Card>
+                <Card.Img variant="top" src={download} />
+              </Card>
+            </Col> 
+            <Col>
+              <Card>
+                <Card.Img variant="top" src={download} />
+              </Card>
+            </Col>          
+          </CardGroup>
         </Row>
       </div>
     );
