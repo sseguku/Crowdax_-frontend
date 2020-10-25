@@ -4,7 +4,7 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import SignUp from "./Components/SignUp";
+import SignUp from "./Components/Signup/SignUp";
 ReactDOM.render(
   <React.StrictMode>
     <SignUp />

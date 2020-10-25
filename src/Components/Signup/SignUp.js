@@ -14,18 +14,27 @@ import {
   CardGroup,
   Container
 } from "react-bootstrap";
-import Footer from "./Footer/Footer";
-import MainNavbar from "./Navbar/MainNavbar";
+import Footer from "../Footer/Footer";
+import MainNavbar from "../Navbar/MainNavbar";
 class SignUp extends Component {
   render() {
     return (
       <div>
           <MainNavbar />
           <Container>
+            {/* Ema, I have made folders.To achieve readable code. 
+             I think each .js file should have a custom css for example
+             Signup.js should have Signup.css. 
+             Just the way. I have done. 
+
+            
+            */}
           <Row style={{margin : '50px'}}>
-            <Col sm={6} style={{boxShadow: '5px #ffffff' }}>
+            <Col sm={8} style={{boxShadow: '5px #ffffff' }}>
+              
+            <h3 align="center">Sign Up to Crowdax</h3>
+            <p className="p-2" />
                 <Form>
-                    <h2>Sign Up to Crowdax</h2>
                     <Form.Group controlId="formBasicEmail">
                         <Form.Control type="email" placeholder="Enter email" />
                     </Form.Group>
@@ -39,14 +48,21 @@ class SignUp extends Component {
                     <Form.Group controlId="formBasicCheckbox">
                         <Form.Check type="checkbox" label="I have agreed to Terms & Conditions" />
                     </Form.Group>
-                    <Button variant="primary" type="submit">
+
+                    <Button variant="info" type="submit">
                         Register
                     </Button>
                 </Form>
                 <h4>Or Signup with </h4>
             </Col>
-            <Col sm={5}>
-                <h2>Hello, Investor</h2>
+            <Col sm={4}>
+                <h3 align="center">Hello, Investor</h3>
+                <p className="p-2" />
+                <p align="justify">Join Crowdax and start investing in African startups and companies. Or register your company so that our team asseses it for a possible chance of being funded. If you already have an account sign below</p>
+           <Row>
+
+           <Button variant="info" type="submit">Register </Button>
+           </Row>
             </Col>
         </Row>
           </Container>
