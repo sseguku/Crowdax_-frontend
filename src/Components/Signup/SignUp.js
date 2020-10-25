@@ -20,7 +20,6 @@ class SignUp extends Component {
   render() {
     return (
       <div>
-          <MainNavbar />
           <Container>
             {/* Ema, I have made folders.To achieve readable code. 
              I think each .js file should have a custom css for example
@@ -49,27 +48,26 @@ class SignUp extends Component {
                         <Form.Check type="checkbox" label="I have agreed to Terms & Conditions" />
                     </Form.Group>
 
-                    <Button variant="info" type="submit">
+                    <Button variant="info"  size="lg" type="submit">
                         Register
                     </Button>
                 </Form>
-                <h4>Or Signup with </h4>
+                <h4> Or Signup with </h4>
+                
             </Col>
             <Col sm={4}>
                 <h3 align="center">Hello, Investor</h3>
                 <p className="p-2" />
-                <p align="justify">Join Crowdax and start investing in African startups and companies. Or register your company so that our team asseses it for a possible chance of being funded. If you already have an account sign below</p>
-           <Row>
-
-           <Button variant="info" type="submit">Register </Button>
-           </Row>
-            </Col>
+                <p align="justify">Join Crowdax and start investing in African
+                 startups and companies. Or register your company so that our 
+                 team asseses it for a possible chance of being funded.</p>
+              <p>
+                  If you already have an account sign below</p>
+                <p className="p-3" />
+              <Button variant="info" size="lg" type="submit">Sign In </Button>
+            </Col>           
         </Row>
           </Container>
-          
-       
-        
-        <Footer/>
       </div>
     );
   }

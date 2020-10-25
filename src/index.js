@@ -5,9 +5,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import SignUp from "./Components/Signup/SignUp";
+import SignIn from "./Components/SignIn/SignIn";
 ReactDOM.render(
   <React.StrictMode>
-    <SignUp />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
