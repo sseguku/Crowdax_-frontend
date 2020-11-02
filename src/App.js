@@ -13,7 +13,7 @@ export class App extends Component {
         <MainNavbar />
 
         <Container>
-          <SignUp />
+          <HomeHeader />
         </Container>
 
         <Footer />
